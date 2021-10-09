@@ -14,13 +14,21 @@
         var numero = prompt("Digite um número!");
         numero = parseFloat(numero);
 
-        var multiplicador = 1;
+        /*var multiplicador = 1;
 
         while(multiplicador <= 1000){
 
         document.write(numero + " x " + multiplicador + " = " + (numero * multiplicador) + "<br>");
         multiplicador = multiplicador + 1;
 
+        };*/
+
+        for(var mult = 1; mult <= 1000; mult++){
+            document.write(numero + " x " + mult + " = " + (numero * mult) + "<br>");
+
+            if(mult % 10 === 0){
+                document.write("<hr>");
+            };
         };
 
         document.write("Fim!");
